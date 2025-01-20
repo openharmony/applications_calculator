@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "calculation",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ]
+  }
+}

@@ -1,0 +1,248 @@
+{
+    "string":[
+        {
+            "name":"history_record",
+            "value":"تارىخ"
+        },
+        {
+            "name":"delete_all_history_date",
+            "value":"بارلىق خاتىرىنى ئۆچۈرەمسىز؟"
+        },
+        {
+            "name":"cancel",
+            "value":"بىكار قىلىش"
+        },
+        {
+            "name":"clear_record",
+            "value":"ئۆچۈرۈش"
+        },
+        {
+            "name":"delete",
+            "value":"ئۆچۈرۈش"
+        },
+        {
+            "name":"error",
+            "value":"خاتا"
+        },
+        {
+            "name":"record_empty",
+            "value":"خاتىرە يوق"
+        },
+        {
+            "name":"more_features",
+            "value":"يېقىندا تېخىمۇ كۆپ ئىقتىدار قوشۇلىدۇ..."
+        },
+        {
+            "name":"desc_fun_exp",
+            "value":"كۆرسەتكۈچلۈك فۇنكسىيە"
+        },
+        {
+            "name":"desc_fun_ln",
+            "value":"تەبىئىي لوگارىفما"
+        },
+        {
+            "name":"desc_fun_tan",
+            "value":"تانگېنس"
+        },
+        {
+            "name":"scrolled_to_top",
+            "value":"چوققىغا سىيرىلدى"
+        },
+        {
+            "name":"result_negative",
+            "value":"مىنۇس"
+        },
+        {
+            "name":"copied",
+            "value":"كۆچۈرۈلدى"
+        },
+        {
+            "name":"desc_op_sub",
+            "value":"ئېلىش"
+        },
+        {
+            "name":"desc_const_e",
+            "value":"ئېيلېر سانى"
+        },
+        {
+            "name":"pasted",
+            "value":"چاپلاندى"
+        },
+        {
+            "name":"desc_op_mul",
+            "value":"كۆپەيتىش"
+        },
+        {
+            "name":"memoryMinusDesc",
+            "value":"ساقلىغاننى ئېلىش"
+        },
+        {
+            "name":"deleted",
+            "value":"ئۆچۈرۈش"
+        },
+        {
+            "name":"memoryStorageDesc",
+            "value":"ئەستە ساقلاندى"
+        },
+        {
+            "name":"desc_op_pow",
+            "value":"دەرىجە"
+        },
+        {
+            "name":"memoryRecallDesc",
+            "value":"ساقلىغاننى يۈكلەش"
+        },
+        {
+            "name":"desc_x_root_y",
+            "value":"يىلتىز"
+        },
+        {
+            "name":"desc_op_sqr",
+            "value":"كىۋادرات"
+        },
+        {
+            "name":"desc_rparen",
+            "value":"ئوڭ تىرناق"
+        },
+        {
+            "name":"desc_op_pct",
+            "value":"پىرسەنت بەلگىسى"
+        },
+        {
+            "name":"desc_op_fact",
+            "value":"فاكتورىيال"
+        },
+        {
+            "name":"cal_history_record",
+            "value":"تارىخ"
+        },
+        {
+            "name":"dragged_text",
+            "value":"تېكىست سۆرەلدى"
+        },
+        {
+            "name":"copy_option_available",
+            "value":"كۆچۈرۈش"
+        },
+        {
+            "name":"desc_inv_off",
+            "value":"تەتۈر فۇنكسىيە كۆرسىتىش"
+        },
+        {
+            "name":"memoryClearDesc",
+            "value":"ساقلىغاننى تازىلاش"
+        },
+        {
+            "name":"desc_lparen",
+            "value":"سول تىرناق"
+        },
+        {
+            "name":"desc_fun_arccos",
+            "value":"ئارك كوسىنۇس"
+        },
+        {
+            "name":"memoryPlusDesc",
+            "value":"ساقلىغاننى قوشۇش"
+        },
+        {
+            "name":"desc_fun_cos",
+            "value":"كوسىنۇس"
+        },
+        {
+            "name":"desc_eq",
+            "value":"تەڭ"
+        },
+        {
+            "name":"desc_op_reciprocal",
+            "value":"تەتۈر ساناق"
+        },
+        {
+            "name":"scrolled_to_bottom",
+            "value":"ئاستىغا سىيرىلدى"
+        },
+        {
+            "name":"exactcalculator_accessibility_deleted",
+            "value":"ئۆچۈرۈلدى"
+        },
+        {
+            "name":"desc_dec_point",
+            "value":"چېكىت"
+        },
+        {
+            "name":"paste_option_available",
+            "value":"چاپلاش"
+        },
+        {
+            "name":"desc_op_cube",
+            "value":"كۇب"
+        },
+        {
+            "name":"desc_fun_sin",
+            "value":"سىنۇس"
+        },
+        {
+            "name":"mode_deg_1",
+            "value":"Deg"
+        },
+        {
+            "name":"copy_paste_option_available",
+            "value":"كۆچۈرۈش ياكى چاپلاش"
+        },
+        {
+            "name":"desc_fun_arctan",
+            "value":"ئارك تانگېنس"
+        },
+        {
+            "name":"desc_switch_deg",
+            "value":"گىرادۇسقا ئالماشتۇرۇش"
+        },
+        {
+            "name":"desc_del",
+            "value":"ئۆچۈرۈش"
+        },
+        {
+            "name":"desc_op_div",
+            "value":"بۆلۈش"
+        },
+        {
+            "name":"desc_fun_arcsin",
+            "value":"ئارك سىنۇس"
+        },
+        {
+            "name":"desc_op_sqrt",
+            "value":"كىۋادرات يىلتىز"
+        },
+        {
+            "name":"desc_op_add",
+            "value":"قوشۇش"
+        },
+        {
+            "name":"copy_or_paste",
+            "value":"كۆچۈرۈش ياكى چاپلاش"
+        },
+        {
+            "name":"desc_clr",
+            "value":"تازىلاش"
+        },
+        {
+            "name":"desc_fun_10pow",
+            "value":"10-دەرىجە"
+        },
+        {
+            "name":"cursor",
+            "value":"نۇربەلگە"
+        },
+        {
+            "name":"desc_const_pi",
+            "value":"چەمبەر تۇراقلىقى"
+        },
+        {
+            "name":"desc_fun_log",
+            "value":"لوگارىفما"
+        },
+        {
+            "name":"mode_rad_1",
+            "value":"Rad"
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{
+  "color": [
+    {
+      "name": "digit_btn_background_color",
+      "value": "#FDFDFD"
+    },
+    {
+      "name": "digit_btn_border_background_color",
+      "value": "#0CFFFFFF"
+    },
+    {
+      "name": "btn_txt_fill_color",
+      "value": "#000000"
+    },
+    {
+      "name": "btn_txt_fill_sqrt_color",
+      "value": "#99000000"
+    },
+    {
+      "name": "btn_image_fill_color",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "btn_equal_txt_fill_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "digit_equal_btn_border_background_color",
+      "value": "#66000000"
+    },
+    {
+      "name": "formula_txt_color",
+      "value": "#E5000000"
+    },
+    {
+      "name": "result_txt_color",
+      "value": "#99000000"
+    },
+    {
+      "name": "ability_background_color",
+      "value": "#F1F3f5"
+    },
+    {
+      "name": "history_first_color",
+      "value": "#929295"
+    },
+    {
+      "name": "btn_normal_background_color",
+      "value": "#F7F7F8"
+    },
+    {
+      "name": "btn_eq_normal_background_color",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "btn_eq_normal_shadow_background_color",
+      "value": "#4D000000"
+    },
+    {
+      "name": "btn_eq_pressed_border_color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "btn_eq_pressed_color_blend",
+      "value": "#42000000"
+    },
+    {
+      "name": "btn_pressed_background_color",
+      "value": "#F7F7F8"
+    },
+    {
+      "name": "btn_pressed_color_blend",
+      "value": "#19000000"
+    },
+    {
+      "name": "btn_hovered_color_blend",
+      "value": "#3D000000"
+    },
+    {
+      "name": "btn_normal_shadow_background_color",
+      "value": "#0C7C7C7C"
+    },
+    {
+      "name": "btn_pressed_shadow_background_color",
+      "value": "#0CCFD2D7"
+    },
+    {
+      "name": "window_background_color",
+      "value": "#FFE9EDF1"
+    },
+    {
+      "name": "btn_normal_border_color",
+      "value": "#CCFFFFFF"
+    },
+    {
+      "name": "btn_pressed_border_color",
+      "value": "#0CFFFFFF"
+    },
+    {
+      "name": "btn_hover_color",
+      "value": "#19000000"
+    },
+    {
+      "name": "btn_background_color",
+      "value": "#00FFFFFF"
+    },
+    {
+      "name": "clear_record_text_color",
+      "value": "#5a5a5c"
+    },
+    {
+      "name": "clear_record_background_color",
+      "value": "#e5e6e8"
+    },
+    {
+      "name": "no_clear_record_text_color",
+      "value": "#b5b6b8"
+    },
+    {
+      "name": "no_clear_record_background_color",
+      "value": "#ecedef"
+    },
+    {
+      "name": "panel_btn_text_color",
+      "value": "#000000"
+    },
+    {
+      "name": "panel_first_line_btn_text_color",
+      "value": "#9a000000"
+    },
+    {
+      "name": "dialog_background_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "panel_btn_background_start",
+      "value": "#F7F7F8"
+    },
+    {
+      "name": "panel_btn_background_end",
+      "value": "#FDFDFD"
+    },
+    {
+      "name": "transparent",
+      "value": "#00000000"
+    }
+  ]
+}
