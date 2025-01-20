@@ -1,0 +1,74 @@
+{
+  "module": {
+    "name": "phone",
+    "type": "entry",
+    "srcEntry": "./ets/Application/CalculatorAbilityStage.ets",
+    "description": "$string:entry_desc",
+    "mainElement": "com.ohos.calculator.CalculatorAbility",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "metadata": [
+      {
+        "name": "ArkTSPartialUpdate",
+        "value": "true"
+      },
+      {
+        "name": "partialUpdateStrictCheck",
+        "value": "warn"
+      },
+      {
+        "name": "license_file_path",
+        "value": "/system/etc/noticeFile/Calculator.html"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "CalculatorAbility",
+        "srcEntry": "./ets/Ability/CalculatorAbility.ets",
+        "description": "$string:CalculatorAbility_desc",
+        "icon": "$media:logo",
+        "label": "$string:app_name",
+        "launchType": "singleton",
+        "startWindowIcon": "$media:start_icon",
+        "startWindowBackground": "$color:color_main_bg",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "supportWindowMode": [
+          "fullscreen",
+          "floating",
+          "split"
+        ],
+        "orientation": "auto_rotation"
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "PhoneFormAbility",
+        "srcEntry": "./ets/phoneformability/PhoneFormAbility.ets",
+        "label": "$string:PhoneFormAbility_label",
+        "description": "$string:PhoneFormAbility_desc",
+        "type": "form",
+        "metadata": [
+          {
+            "name": "ohos.extension.form",
+            "resource": "$profile:form_config"
+          }
+        ]
+      }
+    ]
+  }
+}

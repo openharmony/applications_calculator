@@ -1,0 +1,12 @@
+{
+  "float": [
+    {
+      "name": "card_calculator_picture_width",
+      "value": "34vp"
+    },
+    {
+      "name": "card_calculator_picture_height",
+      "value": "34vp"
+    }
+  ]
+}

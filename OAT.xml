@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2021 Huawei Device Co., Ltd.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+    This is the configuration file template for OpenHarmony OSS Audit Tool, please copy it to your project root dir and modify it refer to OpenHarmony/tools_oat/README.
+
+-->
+
+<configuration>
+    <oatconfig>
+        <licensefile></licensefile>
+        <policylist>
+            <policy name="projectPolicy" desc="">
+                <!--policyitem type="compatibility" name="GPL-2.0+" path="abc/.*" desc="Process that runs independently, invoked by the X process."/-->
+                <!--policyitem type="license" name="LGPL" path="abc/.*" desc="Dynamically linked by module X"/-->
+                <!--policyitem type="copyright" name="xxx" path="abc/.*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc="Developed by X Company"/-->
+            </policy>
+        </policylist>
+        <filefilterlist>
+            <filefilter name="defaultFilter" desc="Files not to check">
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
+                <filteritem type="filepath" name="build-profile.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="gradlew" desc="工程编译脚本，无需添加License头"/>
+                <filteritem type="filepath" name="hvigorfile.ts" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="hvigorw" desc="工程编译入口脚本，无需添加License头"/>
+                <filteritem type="filepath" name="hvigorw.bat" desc="工程编译脚本，无需添加License头"/>
+                <filteritem type="filepath" name="oh-package.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="publicity.xml" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="AppScope/app.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="common/build-profile.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="common/hvigorfile.ts" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="common/oh-package.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="common/src/main/module.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="feature/calculation/oh-package.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="feature/calculation/src/main/module.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="feature/calculation/build-profile.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="feature/calculation/hvigorfile.ts" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/pc/build-profile.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/pc/hvigorfile.ts" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/pc/oh-package.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/pc/src/main/module.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/pc/src/ohosTest/module.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/phone/build-profile.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/phone/hvigorfile.ts" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/phone/oh-package.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/phone/src/main/module.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="product/phone/src/ohosTest/module.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="hvigor/hvigor-wrapper.js" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="hvigor/hvigor-config.json5" desc="工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="hw_sign/sign.js" desc="工程编译配置文件，无需添加License头"/>
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="Filters for copyright header policies">
+                <filteritem type="filepath" name="build-profile.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="gradlew" desc="工程编译脚本，无需添加版权头"/>
+                <filteritem type="filepath" name="hvigorfile.ts" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="hvigorw" desc="工程编译入口脚本，无需添加版权头"/>
+                <filteritem type="filepath" name="hvigorw.bat" desc="工程编译脚本，无需添加版权头"/>
+                <filteritem type="filepath" name="oh-package.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="publicity.xml" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="AppScope/app.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="common/build-profile.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="common/hvigorfile.ts" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="common/oh-package.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="common/src/main/module.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="feature/calculation/oh-package.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="feature/calculation/src/main/module.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="feature/calculation/build-profile.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="feature/calculation/hvigorfile.ts" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/pc/build-profile.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/pc/hvigorfile.ts" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/pc/oh-package.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/pc/src/main/module.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/pc/src/ohosTest/module.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/phone/build-profile.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/phone/hvigorfile.ts" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/phone/oh-package.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/phone/src/main/module.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="product/phone/src/ohosTest/module.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="hvigor/hvigor-wrapper.js" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="hvigor/hvigor-config.json5" desc="工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="hw_sign/sign.js" desc="工程编译配置文件，无需添加版权头"/>
+            </filefilter>
+            <filefilter name="licenseFileNamePolicyFilter" desc="Filters for LICENSE file policies">
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+            <filefilter name="readmeFileNamePolicyFilter" desc="Filters for README file policies">
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+            <filefilter name="readmeOpenSourcefileNamePolicyFilter" desc="Filters for README.OpenSource file policies">
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+            <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+                <filteritem type="filepath" name="AppScope/resources/base/media/start_icon.png" desc="Provided by the UX team."/>
+                <filteritem type="filepath" name="AppScope/resources/base/media/background.png" desc="Provided by the UX team."/>
+                <filteritem type="filepath" name="AppScope/resources/base/media/foreground.png" desc="Provided by the UX team."/>
+                <filteritem type="filepath" name="AppScope/resources/base/media/foreground_pc.png" desc="Provided by the UX team."/>
+                <filteritem type="filepath" name="AppScope/resources/base/media/starting_window.png" desc="Provided by the UX team."/>
+                <filteritem type="filepath" name="hvigor/hvigor-config.json5" desc="工程编译配置文件"/>
+				<filteritem type="filepath" name="figures/architecture.png" desc="组件效果图，无需修改"/>
+                <filteritem type="filepath" name="figures/build_haps.png" desc="安装流程图，无需修改"/>
+				<filteritem type="filepath" name="figures/build_output_dir_release.png" desc="安装流程图，无需修改"/>
+				<filteritem type="filepath" name="figures/hdc_install.png" desc="安装流程图，无需修改"/>
+                <filteritem type="filepath" name="figures/build_profile.png" desc="安装流程图，无需修改"/>
+                <filteritem type="filepath" name="figures/build_sdk.png" desc="安装流程图，无需修改"/>
+
+            </filefilter>
+
+        </filefilterlist>
+        <licensematcherlist>
+            <!--licensematcher name="uvwxyz License" desc="If the scanning result is InvalidLicense, you can define matching rules here. Note that quotation marks must be escaped.">
+                <licensetext name="
+                    uvwxyz license textA xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				 " desc=""/>
+                <licensetext name="
+                    uvwxyz license textB xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+				 " desc=""/>
+            </licensematcher-->
+        </licensematcherlist>
+    </oatconfig>
+</configuration>

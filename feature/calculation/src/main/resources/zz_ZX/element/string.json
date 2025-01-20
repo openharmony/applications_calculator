@@ -1,0 +1,280 @@
+{
+    "string":[
+        {
+            "name":"clear_record",
+            "value":"[TS_870025]_Clear"
+        },
+        {
+            "name":"history_record",
+            "value":"[TS_851596]_History"
+        },
+        {
+            "name":"delete_all_history_date",
+            "value":"[TS_851600]_Clear all records?"
+        },
+        {
+            "name":"cancel",
+            "value":"[TS_851603]_Cancel"
+        },
+        {
+            "name":"delete",
+            "value":"[TS_851598]_Clear"
+        },
+        {
+            "name":"error",
+            "value":"[TS_876911]_Error"
+        },
+        {
+            "name":"std_calculator",
+            "value":"[TS_851599]_Standard"
+        },
+        {
+            "name":"record_empty",
+            "value":"[TS_851597]_No history"
+        },
+        {
+            "name":"sci_calculator",
+            "value":"[TS_851606]_Scientific"
+        },
+        {
+            "name":"more_features",
+            "value":"[TS_881089]_More features coming soon…"
+        },
+        {
+            "name":"desc_fun_exp",
+            "value":"[TS_917801]_exponential function"
+        },
+        {
+            "name":"desc_fun_ln",
+            "value":"[TS_917783]_natural logarithm"
+        },
+        {
+            "name":"desc_fun_tan",
+            "value":"[TS_917784]_tangent"
+        },
+        {
+            "name":"scrolled_to_top",
+            "value":"[TS_917774]_Scrolled to top"
+        },
+        {
+            "name":"result_negative",
+            "value":"[TS_917776]_Minus"
+        },
+        {
+            "name":"copied",
+            "value":"[TS_917804]_Copied"
+        },
+        {
+            "name":"desc_op_sub",
+            "value":"[TS_917817]_minus"
+        },
+        {
+            "name":"desc_const_e",
+            "value":"[TS_917779]_Euler's number"
+        },
+        {
+            "name":"pasted",
+            "value":"[TS_917775]_Pasted"
+        },
+        {
+            "name":"desc_op_mul",
+            "value":"[TS_917786]_multiply"
+        },
+        {
+            "name":"memoryMinusDesc",
+            "value":"[TS_917785]_Memory minus"
+        },
+        {
+            "name":"deleted",
+            "value":"[TS_917810]_Delete"
+        },
+        {
+            "name":"memoryStorageDesc",
+            "value":"[TS_917815]_Stored in memory"
+        },
+        {
+            "name":"desc_op_pow",
+            "value":"[TS_917765]_power"
+        },
+        {
+            "name":"desc_inv_on",
+            "value":"[TS_917773]_hide inverse functions"
+        },
+        {
+            "name":"memoryRecallDesc",
+            "value":"[TS_917807]_Memory recall"
+        },
+        {
+            "name":"desc_x_root_y",
+            "value":"[TS_917813]_Root"
+        },
+        {
+            "name":"desc_op_sqr",
+            "value":"[TS_917821]_squared"
+        },
+        {
+            "name":"desc_rparen",
+            "value":"[TS_917790]_right parenthesis"
+        },
+        {
+            "name":"desc_op_pct",
+            "value":"[TS_917768]_percent"
+        },
+        {
+            "name":"desc_op_fact",
+            "value":"[TS_917792]_factorial"
+        },
+        {
+            "name":"cal_history_record",
+            "value":"[TS_917803]_History"
+        },
+        {
+            "name":"dragged_text",
+            "value":"[TS_917780]_Dragging text"
+        },
+        {
+            "name":"copy_option_available",
+            "value":"[TS_917793]_Copy option available"
+        },
+        {
+            "name":"desc_inv_off",
+            "value":"[TS_917764]_show inverse functions"
+        },
+        {
+            "name":"memoryClearDesc",
+            "value":"[TS_917812]_Memory clear"
+        },
+        {
+            "name":"desc_lparen",
+            "value":"[TS_917789]_left parenthesis"
+        },
+        {
+            "name":"desc_fun_arccos",
+            "value":"[TS_917778]_inverse cosine"
+        },
+        {
+            "name":"memoryPlusDesc",
+            "value":"[TS_917818]_Memory plus"
+        },
+        {
+            "name":"desc_fun_cos",
+            "value":"[TS_917822]_cosine"
+        },
+        {
+            "name":"desc_eq",
+            "value":"[TS_917811]_equals"
+        },
+        {
+            "name":"desc_mode_deg",
+            "value":"[TS_917808]_degree mode"
+        },
+        {
+            "name":"desc_op_reciprocal",
+            "value":"[TS_917795]_Reciprocal"
+        },
+        {
+            "name":"scrolled_to_bottom",
+            "value":"[TS_917787]_Scrolled to bottom"
+        },
+        {
+            "name":"exactcalculator_accessibility_deleted",
+            "value":"[TS_917796]_Deleted"
+        },
+        {
+            "name":"desc_dec_point",
+            "value":"[TS_917788]_point"
+        },
+        {
+            "name":"paste_option_available",
+            "value":"[TS_917819]_Paste option available"
+        },
+        {
+            "name":"desc_op_cube",
+            "value":"[TS_917761]_Cube"
+        },
+        {
+            "name":"desc_switch_rad",
+            "value":"[TS_917769]_switch to radians"
+        },
+        {
+            "name":"desc_fun_sin",
+            "value":"[TS_917798]_sine"
+        },
+        {
+            "name":"mode_deg_1",
+            "value":"[TS_917797]_Deg"
+        },
+        {
+            "name":"copy_paste_option_available",
+            "value":"[TS_917777]_Copy and paste options available"
+        },
+        {
+            "name":"cleared",
+            "value":"[TS_917816]_cleared"
+        },
+        {
+            "name":"desc_fun_arctan",
+            "value":"[TS_917805]_inverse tangent"
+        },
+        {
+            "name":"desc_switch_deg",
+            "value":"[TS_917762]_switch to degrees"
+        },
+        {
+            "name":"desc_del",
+            "value":"[TS_917809]_delete"
+        },
+        {
+            "name":"desc_op_div",
+            "value":"[TS_917791]_divide"
+        },
+        {
+            "name":"desc_fun_arcsin",
+            "value":"[TS_917772]_inverse sine"
+        },
+        {
+            "name":"desc_op_sqrt",
+            "value":"[TS_917806]_square root"
+        },
+        {
+            "name":"desc_op_add",
+            "value":"[TS_917799]_plus"
+        },
+        {
+            "name":"copy_or_paste",
+            "value":"[TS_917814]_copy or paste"
+        },
+        {
+            "name":"desc_clr",
+            "value":"[TS_917802]_clear"
+        },
+        {
+            "name":"desc_fun_10pow",
+            "value":"[TS_917781]_ten to the power of"
+        },
+        {
+            "name":"cursor",
+            "value":"[TS_917782]_Cursor"
+        },
+        {
+            "name":"desc_mode_rad",
+            "value":"[TS_917770]_radian mode"
+        },
+        {
+            "name":"desc_const_pi",
+            "value":"[TS_917771]_pi"
+        },
+        {
+            "name":"desc_fun_log",
+            "value":"[TS_917800]_logarithm"
+        },
+        {
+            "name":"mode_rad_1",
+            "value":"[TS_917794]_Rad"
+        },
+        {
+            "name":"invalid_input",
+            "value":"[TS_919526]_invalid input"
+        }
+    ]
+}
