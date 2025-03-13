@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "entry_desc",
+      "value": "description"
+    },
+    {
+      "name": "CalculatorAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "CalculatorAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "PhoneFormAbility_desc",
+      "value": "form_description"
+    },
+    {
+      "name": "PhoneFormAbility_label",
+      "value": "form_label"
+    }
+  ]
+}

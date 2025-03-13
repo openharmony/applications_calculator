@@ -1,0 +1,6 @@
+{
+  "src": [
+    "testability/pages/historyRecordPage",
+    "testability/pages/main"
+  ]
+}

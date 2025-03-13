@@ -1,0 +1,44 @@
+{
+  "color": [
+    {
+      "name": "color_bottom",
+      "value": "#202224"
+    },
+    {
+      "name": "color_button_bg",
+      "value": "#25282B"
+    },
+    {
+      "name": "color_main_bg",
+      "value": "#000000"
+    },
+    {
+      "name": "color_border",
+      "value": "#0cffffff"
+    },
+    {
+      "name": "color_shadow_bg",
+      "value": "#B216171A"
+    },
+    {
+      "name": "color_equal_border",
+      "value": "#14FFFFFF"
+    },
+    {
+      "name": "color_border_light_bg",
+      "value": "#25282B"
+    },
+    {
+      "name": "color_border_dark_bg",
+      "value": "#272A2E"
+    },
+    {
+      "name": "panel_btn_background_start",
+      "value": "#25282B"
+    },
+    {
+      "name": "panel_btn_background_end",
+      "value": "#272A2E"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>svgdelect</title>
+    <g id="delect" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(8.000000, 14.000000)" fill="#0A59F7" fill-rule="nonzero">
+            <path d="M30.1199268,0 L9.09712136,0 L0,10.051357 L9.07640208,20 L30.1199268,20 L30.1199268,0 Z M27.2627839,3.15789474 L27.2627839,16.8421053 L10.2532601,16.8421053 L4.0494506,10.0421053 L10.2789744,3.15789474 L27.2627839,3.15789474 Z" id="矩形"></path>
+            <polygon id="×" points="14.5793218 4.53098846 12.7466189 6.36369138 16.362 9.99 12.7505634 13.6028044 14.574856 15.4734773 18.196 11.851 21.8228448 15.468546 23.6846426 13.6067483 20.058 9.99 23.6886422 6.35969112 21.8184347 4.53585245 18.196 8.148"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+{
+    "string":[
+        {
+            "name":"CalculatorAbility_label",
+            "value":"[TS_915314]_label"
+        },
+        {
+            "name":"PhoneFormAbility_label",
+            "value":"[TS_916983]_form_label"
+        },
+        {
+            "name":"CalculatorAbility_desc",
+            "value":"[TS_915312]_description"
+        },
+        {
+            "name":"entry_desc",
+            "value":"[TS_915313]_description"
+        },
+        {
+            "name":"PhoneFormAbility_desc",
+            "value":"[TS_916984]_form_description"
+        }
+    ]
+}

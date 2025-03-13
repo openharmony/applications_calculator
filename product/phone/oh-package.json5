@@ -1,0 +1,12 @@
+{
+  "license": "ISC",
+  "devDependencies": {},
+  "name": "phone",
+  "description": "Calculator for phone",
+  "repository": "https://gitee.com/qin_wei_jie/calculator_sync.git",
+  "version": "1.0.0",
+  "dependencies": {
+    "@hmos/calculation": "file:../../feature/calculation",
+    "@hmos/common": "file:../../common"
+  }
+}

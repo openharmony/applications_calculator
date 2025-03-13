@@ -1,0 +1,280 @@
+{
+    "string":[
+        {
+            "name": "std_calculator",
+            "value": "标准计算器"
+        },
+        {
+            "name": "sci_calculator",
+            "value": "科学计算器"
+        },
+        {
+            "name": "history_record",
+            "value": "历史记录"
+        },
+        {
+            "name": "record_empty",
+            "value": "没有历史记录"
+        },
+        {
+            "name": "delete_all_history_date",
+            "value": "是否删除全部历史记录?"
+        },
+        {
+            "name": "cancel",
+            "value": "取消"
+        },
+        {
+            "name": "delete",
+            "value": "删除"
+        },
+        {
+            "name": "clear_record",
+            "value": "删除"
+        },
+        {
+            "name": "error",
+            "value": "错误"
+        },
+        {
+            "name": "more_features",
+            "value": "更多功能开发中"
+        },
+        {
+            "name": "cleared",
+            "value": "已清除"
+        },
+        {
+            "name": "desc_const_e",
+            "value": "欧拉数"
+        },
+        {
+            "name": "desc_const_pi",
+            "value": "圆周率"
+        },
+        {
+            "name": "desc_dec_point",
+            "value": "点"
+        },
+        {
+            "name": "desc_lparen",
+            "value": "左括号"
+        },
+        {
+            "name": "desc_rparen",
+            "value": "右括号"
+        },
+        {
+            "name": "desc_fun_cos",
+            "value": "余弦"
+        },
+        {
+            "name": "desc_fun_ln",
+            "value": "自然对数"
+        },
+        {
+            "name": "desc_fun_log",
+            "value": "对数"
+        },
+        {
+            "name": "desc_fun_sin",
+            "value": "正弦"
+        },
+        {
+            "name": "desc_fun_tan",
+            "value": "正切"
+        },
+        {
+            "name": "desc_fun_arccos",
+            "value": "反余弦"
+        },
+        {
+            "name": "desc_fun_arcsin",
+            "value": "反正弦"
+        },
+        {
+            "name": "desc_fun_arctan",
+            "value": "反正切"
+        },
+        {
+            "name": "desc_fun_10pow",
+            "value": "10 的次方"
+        },
+        {
+            "name": "desc_fun_exp",
+            "value": "指数函数"
+        },
+        {
+            "name": "desc_op_sqr",
+            "value": "平方"
+        },
+        {
+            "name": "desc_op_add",
+            "value": "加"
+        },
+        {
+            "name": "desc_op_div",
+            "value": "除"
+        },
+        {
+            "name": "desc_op_fact",
+            "value": "阶乘"
+        },
+        {
+            "name": "desc_op_mul",
+            "value": "乘"
+        },
+        {
+            "name": "desc_op_pct",
+            "value": "百分比符号"
+        },
+        {
+            "name": "desc_op_pow",
+            "value": "幂数"
+        },
+        {
+            "name": "desc_op_sqrt",
+            "value": "平方根"
+        },
+        {
+            "name": "desc_op_sub",
+            "value": "减"
+        },
+        {
+            "name": "desc_mode_deg",
+            "value": "角度模式"
+        },
+        {
+            "name": "desc_mode_rad",
+            "value": "弧度模式"
+        },
+        {
+            "name": "desc_switch_deg",
+            "value": "切换成角度"
+        },
+        {
+            "name": "desc_switch_rad",
+            "value": "切换成弧度"
+        },
+        {
+            "name": "desc_eq",
+            "value": "等于"
+        },
+        {
+            "name": "desc_clr",
+            "value": "清除"
+        },
+        {
+            "name": "desc_del",
+            "value": "删除"
+        },
+        {
+            "name": "desc_inv_off",
+            "value": "显示反函数"
+        },
+        {
+            "name": "desc_inv_on",
+            "value": "隐藏反函数"
+        },
+        {
+            "name": "desc_op_cube",
+            "value": "立方"
+        },
+        {
+            "name": "desc_x_root_y",
+            "value": "根"
+        },
+        {
+            "name": "desc_op_reciprocal",
+            "value": "倒数"
+        },
+        {
+            "name": "memoryClearDesc",
+            "value": "记忆清除"
+        },
+        {
+            "name": "memoryPlusDesc",
+            "value": "记忆加"
+        },
+        {
+            "name": "memoryMinusDesc",
+            "value": "记忆减"
+        },
+        {
+            "name": "memoryRecallDesc",
+            "value": "记忆读取"
+        },
+        {
+            "name": "memoryStorageDesc",
+            "value": "记忆存储"
+        },
+        {
+            "name": "mode_deg_1",
+            "value": "Deg"
+        },
+        {
+            "name": "mode_rad_1",
+            "value": "Rad"
+        },
+        {
+            "name": "cal_history_record",
+            "value": "历史记录"
+        },
+        {
+            "name": "deleted",
+            "value": "删除"
+        },
+        {
+            "name": "result_negative",
+            "value": "负"
+        },
+        {
+            "name": "dragged_text",
+            "value": "文字被拖动"
+        },
+        {
+            "name": "scrolled_to_bottom",
+            "value": "滚动到底部"
+        },
+        {
+            "name": "scrolled_to_top",
+            "value": "滚动到顶部"
+        },
+        {
+            "name": "copy_option_available",
+            "value": "复制"
+        },
+        {
+            "name": "paste_option_available",
+            "value": "粘贴"
+        },
+        {
+            "name": "copy_paste_option_available",
+            "value": "复制或粘贴"
+        },
+        {
+            "name": "copied",
+            "value": "已复制"
+        },
+        {
+            "name": "pasted",
+            "value": "已粘贴"
+        },
+        {
+            "name": "cursor",
+            "value": "光标"
+        },
+        {
+            "name": "copy_or_paste",
+            "value": "复制或粘贴"
+        },
+        {
+            "name": "exactcalculator_accessibility_deleted",
+            "value": "已删除"
+        },
+        {
+            "name": "invalid_input",
+            "value": "无效输入"
+        }
+    ]
+}
