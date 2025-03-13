@@ -1,36 +1,87 @@
 # applications_calculator
 
-#### Description
-提供标准计算器和历史记录功能
+## Description
+Calculator application provide standard calculator and history recording functions.
 
-#### Software Architecture
-Software architecture description
+## Directory
+```
+├─AppScope
+│  │  
+│  └─resources                       # Resource file 
+├─common
+│  │  
+│  └─src
+│      └─main  
+│          └─ets                     # Public methods            
+├─feature
+│  │
+│  └─calculation 
+│     │ 
+│     └─src
+│        └─main
+│           └─ets                    # Basic characteristics                                         
+├─product
+│  │
+│  └─phone 
+│      └─src
+│         └─main 
+│              └─ets                 # Mobile / pad program entrance  
+├─product
+│  │
+│  └─pc 
+│      └─src
+│         └─main 
+│              └─ets                 # PC program entrance   
+├─open_source                        # Open source declaration of introduced third-party libraries                              
+└─hw_sign                            # Signature file
+```
 
-#### Installation
+## Overall architecture
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![](./figures/architecture.png)
 
-#### Instructions
+Calculator, as a basic application, implements standard calculator and history recording functions.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## Instructions
 
-#### Contribution
+### Built on IDE
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+Open the project engineering in DevEco Studio and select Build → Build Haps(s)/APP(s) → Build Hap(s).
 
+![](./figures/build_haps.png)
 
-#### Gitee Feature
+After compilation, the hap package will be generated in the '\build\outputs' path in the project directory. (If no signature is configured, only unsigned HAP packages will be generated.)
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+![](./figures/build_output_dir_release.png)
+
+Use the hdc install 'hap package address' command to install the compiled hap package.
+
+![](./figures/hdc_install.png)
+
+Run the OpenHarmony version configuration on the testing machine.
+
+![](./figures/build_profile.png)
+
+Configure SDK according to local environment.
+
+![](./figures/build_sdk.png)
+
+### Built on OpenHarmony version
+
+In the OpenHarmony source code directory, call the command to compile the calculator separately.
+
+```
+./build.sh --product-name rk3568 --ccache --build-target calculator
+```
+> **Instructions：**
+--product-name：Product names, such as Hi3516DV300, rk3568, etc.
+--ccache：Use caching function during compilation.
+--build-target: The name of the compiled component.
+
+## Restraint
+- Development environment
+    - **DevEco Studio for OpenHarmony**: The Version number is greater than 3.1.1.101, download and install OpenHarmony SDK API Version 11. (You can refer to the IDE documentation for initial IDE configuration.)
+- Language version
+    - ArkTS
+- Restrict
+    - This example only supports running on standard systems
