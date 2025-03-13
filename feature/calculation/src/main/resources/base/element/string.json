@@ -1,0 +1,280 @@
+{
+    "string":[
+        {
+            "name":"std_calculator",
+            "value":"Standard"
+        },
+        {
+            "name":"sci_calculator",
+            "value":"Scientific"
+        },
+        {
+            "name":"history_record",
+            "value":"History"
+        },
+        {
+            "name":"record_empty",
+            "value":"No history"
+        },
+        {
+            "name":"delete_all_history_date",
+            "value":"Clear all records?"
+        },
+        {
+            "name":"cancel",
+            "value":"Cancel"
+        },
+        {
+            "name":"delete",
+            "value":"Clear"
+        },
+        {
+            "name":"clear_record",
+            "value":"Clear"
+        },
+        {
+            "name":"error",
+            "value":"Error"
+        },
+        {
+            "name":"more_features",
+            "value":"More features coming soon…"
+        },
+        {
+            "name":"cleared",
+            "value":"cleared"
+        },
+        {
+            "name":"desc_const_e",
+            "value":"Euler's number"
+        },
+        {
+            "name":"desc_const_pi",
+            "value":"pi"
+        },
+        {
+            "name":"desc_dec_point",
+            "value":"point"
+        },
+        {
+            "name":"desc_lparen",
+            "value":"left parenthesis"
+        },
+        {
+            "name":"desc_rparen",
+            "value":"right parenthesis"
+        },
+        {
+            "name":"desc_fun_cos",
+            "value":"cosine"
+        },
+        {
+            "name":"desc_fun_ln",
+            "value":"natural logarithm"
+        },
+        {
+            "name":"desc_fun_log",
+            "value":"logarithm"
+        },
+        {
+            "name":"desc_fun_sin",
+            "value":"sine"
+        },
+        {
+            "name":"desc_fun_tan",
+            "value":"tangent"
+        },
+        {
+            "name":"desc_fun_arccos",
+            "value":"inverse cosine"
+        },
+        {
+            "name":"desc_fun_arcsin",
+            "value":"inverse sine"
+        },
+        {
+            "name":"desc_fun_arctan",
+            "value":"inverse tangent"
+        },
+        {
+            "name":"desc_fun_10pow",
+            "value":"ten to the power of"
+        },
+        {
+            "name":"desc_fun_exp",
+            "value":"exponential function"
+        },
+        {
+            "name":"desc_op_sqr",
+            "value":"squared"
+        },
+        {
+            "name":"desc_op_add",
+            "value":"plus"
+        },
+        {
+            "name":"desc_op_div",
+            "value":"divide"
+        },
+        {
+            "name":"desc_op_fact",
+            "value":"factorial"
+        },
+        {
+            "name":"desc_op_mul",
+            "value":"multiply"
+        },
+        {
+            "name":"desc_op_pct",
+            "value":"percent"
+        },
+        {
+            "name":"desc_op_pow",
+            "value":"power"
+        },
+        {
+            "name":"desc_op_sqrt",
+            "value":"square root"
+        },
+        {
+            "name":"desc_op_sub",
+            "value":"minus"
+        },
+        {
+            "name":"desc_mode_deg",
+            "value":"degree mode"
+        },
+        {
+            "name":"desc_mode_rad",
+            "value":"radian mode"
+        },
+        {
+            "name":"desc_switch_deg",
+            "value":"switch to degrees"
+        },
+        {
+            "name":"desc_switch_rad",
+            "value":"switch to radians"
+        },
+        {
+            "name":"desc_eq",
+            "value":"equals"
+        },
+        {
+            "name":"desc_clr",
+            "value":"clear"
+        },
+        {
+            "name":"desc_del",
+            "value":"delete"
+        },
+        {
+            "name":"desc_inv_off",
+            "value":"show inverse functions"
+        },
+        {
+            "name":"desc_inv_on",
+            "value":"hide inverse functions"
+        },
+        {
+            "name":"desc_op_cube",
+            "value":"Cube"
+        },
+        {
+            "name":"desc_x_root_y",
+            "value":"Root"
+        },
+        {
+            "name":"desc_op_reciprocal",
+            "value":"Reciprocal"
+        },
+        {
+            "name":"memoryClearDesc",
+            "value":"Memory clear"
+        },
+        {
+            "name":"memoryPlusDesc",
+            "value":"Memory plus"
+        },
+        {
+            "name":"memoryMinusDesc",
+            "value":"Memory minus"
+        },
+        {
+            "name":"memoryRecallDesc",
+            "value":"Memory recall"
+        },
+        {
+            "name":"memoryStorageDesc",
+            "value":"Stored in memory"
+        },
+        {
+            "name":"mode_deg_1",
+            "value":"Deg"
+        },
+        {
+            "name":"mode_rad_1",
+            "value":"Rad"
+        },
+        {
+            "name":"cal_history_record",
+            "value":"History"
+        },
+        {
+            "name":"deleted",
+            "value":"Delete"
+        },
+        {
+            "name":"result_negative",
+            "value":"Minus"
+        },
+        {
+            "name":"dragged_text",
+            "value":"Dragging text"
+        },
+        {
+            "name":"scrolled_to_bottom",
+            "value":"Scrolled to bottom"
+        },
+        {
+            "name":"scrolled_to_top",
+            "value":"Scrolled to top"
+        },
+        {
+            "name":"copy_option_available",
+            "value":"Copy option available"
+        },
+        {
+            "name":"paste_option_available",
+            "value":"Paste option available"
+        },
+        {
+            "name":"copy_paste_option_available",
+            "value":"Copy and paste options available"
+        },
+        {
+            "name":"copied",
+            "value":"Copied"
+        },
+        {
+            "name":"pasted",
+            "value":"Pasted"
+        },
+        {
+            "name":"cursor",
+            "value":"Cursor"
+        },
+        {
+            "name":"copy_or_paste",
+            "value":"copy or paste"
+        },
+        {
+            "name":"exactcalculator_accessibility_deleted",
+            "value":"Deleted"
+        },
+        {
+            "name":"invalid_input",
+            "value":"invalid input"
+        }
+    ]
+}

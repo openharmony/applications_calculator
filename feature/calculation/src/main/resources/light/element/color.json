@@ -1,0 +1,36 @@
+{
+  "color": [
+    {
+      "name": "color_bottom",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "color_button_bg",
+      "value": "#fcfcfc"
+    },
+    {
+      "name": "color_main_bg",
+      "value": "#E9EDF1"
+    },
+    {
+      "name": "color_border",
+      "value": "#ccffffff"
+    },
+    {
+      "name": "color_shadow_bg",
+      "value": "#33BABBBC"
+    },
+    {
+      "name": "color_equal_border",
+      "value": "#14FFFFFF"
+    },
+    {
+      "name": "color_border_light_bg",
+      "value": "#F7F7F8"
+    },
+    {
+      "name": "color_border_dark_bg",
+      "value": "#FDFDFD"
+    }
+  ]
+}

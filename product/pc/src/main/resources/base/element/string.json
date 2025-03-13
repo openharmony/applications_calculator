@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "pc_desc",
+      "value": "pc product"
+    },
+    {
+      "name": "CalculatorAbility_desc",
+      "value": "pc product CalculatorAbility"
+    }
+  ]
+}
