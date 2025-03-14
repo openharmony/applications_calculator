@@ -42,7 +42,7 @@
 
 
 
-### 整体架构
+## 整体架构
 
 
 ![](./figures/architecture.png)
@@ -66,10 +66,11 @@ Calculator作为基础应用，实现标准计算器和历史记录功能。
 
 ![](./figures/hdc_install.png)
 
-在测试机上运行 配置OpenHarmony版本
+在测试机上运行 配置OpenHarmony版本。
 ![](./figures/build_profile.png)
 
-根据本地环境配置sdk
+根据本地环境配置sdk。
+
 ![](./figures/build_sdk.png)
 
 ### 基于OpenHarmony版本构建
