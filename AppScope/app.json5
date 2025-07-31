@@ -2,8 +2,8 @@
   "app": {
     "bundleName": "com.ohos.calculator",
     "vendor": "example",
-    "versionCode": 150000110,
-    "versionName": "15.0.0.110",
+    "versionCode": 180000115,
+    "versionName": "18.0.0.115",
     "icon": "$media:logo",
     "label": "$string:app_name",
     "debug": false
