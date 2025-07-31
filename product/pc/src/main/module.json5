@@ -5,7 +5,9 @@
     "srcEntry": "./ets/Application/CalculatorAbilityStage.ets",
     "description": "$string:pc_desc",
     "mainElement": "com.ohos.calculator.CalculatorAbility",
-    "deviceTypes": [],
+    "deviceTypes": [
+      "default"
+    ],
     "deliveryWithInstall": true,
     "installationFree": false,
     "pages": "$profile:main_pages",
