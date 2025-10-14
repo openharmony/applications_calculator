@@ -92,6 +92,7 @@ export class HistoryRecordController {
       if (this.expDataSource.totalCount() === 0) {
         this.isEmptyView = true;
       }
+      this.expDataSource.refresh(this.expDataSource.getRecordList());
     });
   }
 
@@ -150,5 +151,9 @@ export class HistoryRecordController {
    */
   public shown(): void {
     this.expDataSource.shown();
+  }
+
+  public update(historyRecordList: Array<LooseObject>): void {
+    this.expDataSource.update(historyRecordList)
   }
 }
