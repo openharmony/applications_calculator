@@ -17,11 +17,12 @@ import display from '@ohos.display';
 import { Callback } from '@ohos.base';
 import common from '@ohos.app.ability.common';
 import {
-  LogUtil,
-  CommonUtil,
-  LooseObject,
-  BreakPointType,
   AdaptiveAgingUtil,
+  BreakPointType,
+  CommonUtil,
+  HistoryObject,
+  LooseObject,
+  LogUtil,
 } from '@hmos/common';
 import { HistoryRecordController } from './HistoryRecordController';
 import { DelRecordsDialog } from '../views/DelRecordsDialog';
@@ -72,6 +73,7 @@ export struct HistoryRecord {
   @State swipeScale: number = 1;
   @Provide isChangeFoldStatus: boolean = false;
   @StorageProp('currentBreakPoint') curBp: string = '';
+  @StorageLink('isRtlLocale') @Watch('mirrorLanguageChange') isRtlLocale: boolean = false;
   private isFoldable: boolean = display.isFoldable();
   private isEnabled: EdgeEffectOptions = { alwaysEnabled: true };
   private itemLeftOrRightPadding: BreakPointType = new BreakPointType({
@@ -81,6 +83,11 @@ export struct HistoryRecord {
     lgMd: TABLET_PADDING,
     base: DEFAULT_PADDING,
   });
+
+  mirrorLanguageChange(value: string): void {
+    LogUtil.error(TAG, 'mirrorLanguageChange: ' + value);
+    this.mHistoryRecordCtrl.update(this.historyRecordList);
+  }
 
   private deleteMenuItem: Array<NavigationMenuItem> = [
     {
@@ -305,7 +312,7 @@ export struct HistoryRecord {
   }
 
   @Builder
-  historyListItem(item: LooseObject) {
+  historyListItem(item: HistoryObject) {
     Flex({ direction: FlexDirection.Column }) {
       Text(item.expression)
         .padding({ top: $r('app.float.space_2') })
@@ -336,44 +343,72 @@ export struct HistoryRecord {
   }
 
   @Builder
+  itemHead(item: LooseObject) {
+    if (item.isDateVisible) {
+      Column() {
+        Text(item.date)
+          .fontFamily('HarmonyHeiTi')
+          .fontSize($r('app.float.title_date_font_size'))
+          .fontColor($r('sys.color.font_tertiary'))
+      }
+      .alignItems(HorizontalAlign.Start)
+      .width('100%')
+      .direction(Direction.Ltr)
+      .padding({
+        bottom: $r('app.float.data_digit_panel_padding'),
+        left: $r('app.float.data_digit_panel_padding'),
+        right: $r('app.float.data_digit_panel_padding'),
+        top: $r('app.float.data_digit_panel_padding'),
+      })
+    }
+  }
+
+  @Builder
   records() {
     if (this.mHistoryRecordCtrl.getIsEmptyView()) {
       EmptyView({adaptiveAging: $adaptiveAging})
     } else {
       List() {
-        ForEach(this.historyRecordList, (item: LooseObject) => {
-          ListItem() {
-            this.historyListItem(item)
-          }
-          .width('100%')
-          .margin({ bottom: $r('app.float.history_record_item_space') })
-          .transition(
-            TransitionEffect.asymmetric(
-              TransitionEffect.IDENTITY,
-              TransitionEffect.scale({ x: 1, y: 1 })
-                .animation({ curve: Curve.Friction, duration: 0 })
-                .combine(
-                  TransitionEffect.OPACITY.animation({ curve: Curve.Sharp, duration: 0 })
+        LazyForEach(this.mHistoryRecordCtrl.getExpDataSource(), (item: LooseObject) => {
+          ListItemGroup({header: this.itemHead(item)}) {
+            ForEach(item.history, (itemA: HistoryObject) => {
+              ListItem() {
+                this.historyListItem(itemA)
+              }
+              .clip(true)
+              .width('100%')
+              .margin({bottom: $r('app.float.history_record_item_space')})
+              .transition(
+                TransitionEffect.asymmetric(
+                  TransitionEffect.IDENTITY,
+                  TransitionEffect.scale({x:1, y:1})
+                    .animation({curve: Curve.Friction, duration: 0})
+                    .combine(
+                      TransitionEffect.OPACITY.animation({curve:Curve.Sharp, duration : 0})
+                    )
                 )
-            )
-          )
-          .swipeAction({
-            edgeEffect: SwipeEdgeEffect.None,
-            end: {
-              builder: (): void => this.renderSwipeAction(item),
-              onAction: () => {
-                this.swipeAction(item);
-              },
-            }
-          })
+              )
+              .borderRadius($r('app.float.popMenu_border_radius'))
+              .swipeAction({
+                edgeEffect: SwipeEdgeEffect.Spring,
+                end: {
+                  builder: (): void => this.renderSwipeAction(item),
+                  onAction: () => {
+                    this.swipeAction(item);
+                  },
+                }
+              })
+            }, (itemA: HistoryObject) => {
+              return itemA.id;
+            })
+          }
         }, (item: LooseObject) => {
-          return item.id;
+          return `${item.id}_${item.isDateVisible}_${item.date}`;
         })
       }
       .width('100%')
       .height('100%')
       .flexShrink(1)
-      .sticky(StickyStyle.Header)
       .scrollBar(BarState.Auto)
       .edgeEffect(EdgeEffect.Spring, this.isEnabled)
       .contentEndOffset(CommonUtil.getBottomSafeHeight())
