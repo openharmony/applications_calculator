@@ -26,4 +26,12 @@ export class LooseObject {
   public time_stamp: number = -1;
   public id: string = '';
   public dbId: string = '';
+  public history: Array<HistoryObject> = [];
+}
+
+export class HistoryObject {
+  public expression: string = '';
+  public result: string = '';
+  public id: string = '';
+  public isDateVisible: boolean = false;
 }

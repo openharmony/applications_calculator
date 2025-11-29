@@ -31,6 +31,7 @@ export default class CalculatorAbility extends UIAbility {
 
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
     GlobalContext.getContext().setObject('resourceManager', this.context.resourceManager);
+    AppStorage.setOrCreate('localString', this.context.config.language);
     LogUtil.info(TAG, 'CalculatorAbility onCreate');
   }
 
@@ -102,6 +103,8 @@ export default class CalculatorAbility extends UIAbility {
   }
 
   onConfigurationUpdate(newConfig: Configuration): void {
+    LogUtil.error(TAG, 'onConfigurationUpdate: ' + JSON.stringify(newConfig));
+    AppStorage.setOrCreate('localString', newConfig.language);
     this.changeStatusBarContentColor(newConfig.colorMode);
   }
 

@@ -15,7 +15,7 @@
 
 export * from './src/main/ets/data/TableData';
 
-export { LooseObject } from './src/main/ets/data/LooseObject';
+export { LooseObject, HistoryObject } from './src/main/ets/data/LooseObject';
 
 export {
   KEY_WINDOW_WIDTH,

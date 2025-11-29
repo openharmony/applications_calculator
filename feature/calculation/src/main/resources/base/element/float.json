@@ -45,8 +45,8 @@
       "value": "4vp"
     },
     {
-       "name": "digit_btn_txt_font_size",
-       "value": "32fp"
+      "name": "digit_btn_txt_font_size",
+      "value": "32fp"
     },
     {
       "name": "panel_btn_font_size_sm",
@@ -143,6 +143,18 @@
     {
       "name": "action_bar_height",
       "value": "56vp"
+    },
+    {
+      "name": "data_digit_panel_padding",
+      "value": "12vp"
+    },
+    {
+      "name": "title_date_font_size",
+      "value": "14vp"
+    },
+    {
+      "name": "empty_history_font_size_pc",
+      "value": "21fp"
     },
     {
       "name": "action_bar_margin_right",

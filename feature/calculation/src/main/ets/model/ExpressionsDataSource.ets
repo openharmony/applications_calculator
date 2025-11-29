@@ -13,8 +13,13 @@
  * limitations under the License.
  */
 
-import { LogUtil, LooseObject, DateUtil } from '@hmos/common';
 import BaseDataSource from './BaseDataSource';
+import {
+  DateUtil,
+  HistoryObject,
+  LogUtil,
+  LooseObject,
+} from '@hmos/common';
 
 const TAG: string = 'ExpressionsDataSource';
 
@@ -89,11 +94,23 @@ export class ExpressionsDataSource extends BaseDataSource {
   }
 
   /**
+   * 数据更新时的逻辑
+   */
+  public update(expList: Array<LooseObject>): void {
+    if (expList && expList.length > 0) {
+      this.buildExpList(expList);
+    }
+    this.expList = expList || [];
+    this.notifyDataReload();
+  }
+
+  /**
    * handle expLists, add property isVisible.
    *
    * @param expLists
    */
   private buildExpList(expLists: Array<LooseObject>): void {
+    this.dateUtil.refreshLocalStr();
     let preDateId: string = this.dateUtil.today;
     for (let i = 0; i < expLists.length; i++) {
       let curItemData: LooseObject = expLists[i];
@@ -101,6 +118,16 @@ export class ExpressionsDataSource extends BaseDataSource {
       this.convertTimeStampToDate(curItemData, preDateId, (dateId: string) => {
         preDateId = dateId;
       });
+      let isVisible: boolean = i === 0 ? true : curItemData.isDateVisible;
+      curItemData.isDateVisible = isVisible;
+      if (curItemData.history.length === 0) {
+        let resultItem: HistoryObject = new HistoryObject();
+        resultItem.expression = curItemData.expression;
+        resultItem.result = curItemData.result;
+        resultItem.id = curItemData.id;
+        resultItem.isDateVisible = curItemData.isDateVisible;
+        curItemData.history.push(resultItem);
+      }
     }
   }
 
