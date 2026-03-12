@@ -121,6 +121,8 @@
                 <filteritem type="filepath" name="AppScope/resources/base/media/starting_window.png" desc="Provided by the UX team."/>
                 <filteritem type="filepath" name="hvigor/hvigor-config.json5" desc="工程编译配置文件"/>
 				<filteritem type="filepath" name="figures/architecture.png" desc="组件效果图，无需修改"/>
+                <filteritem type="filepath" name="figures/architecture_zh.png" desc="组件效果图，无需修改"/>
+                <filteritem type="filepath" name="figures/architecture_en.png" desc="组件效果图，无需修改"/>
                 <filteritem type="filepath" name="figures/build_haps.png" desc="安装流程图，无需修改"/>
 				<filteritem type="filepath" name="figures/build_output_dir_release.png" desc="安装流程图，无需修改"/>
 				<filteritem type="filepath" name="figures/hdc_install.png" desc="安装流程图，无需修改"/>
