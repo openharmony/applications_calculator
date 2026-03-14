@@ -187,7 +187,7 @@ Calculator 应用主要使用以下 OpenHarmony API：
 |---------|---------|
 | **@ohos.worker** | Worker 线程，用于后台计算 |
 | **@ohos.data.relationalStore** | 关系型数据库，用于存储历史记录 |
-| **@ohos.data.preferences** | 首选项，用于持久化配置 |
+| **@ohos.data.preferences** | 持久化配置 |
 | **@ohos.window** | 窗口管理，用于控制屏幕方向 |
 | **@ohos.display** | 显示管理，用于获取屏幕信息 |
 
