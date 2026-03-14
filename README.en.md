@@ -277,7 +277,7 @@ rdbHelper.insertHistoryRecord({
 
 * **Development Environment**
   * **DevEco Studio for OpenHarmony**: Version greater than 3.1.1.101
-  * **SDK Version**: OpenHarmony SDK API Version 12
+  * **SDK Version**: OpenHarmony SDK API Version 23
   * **Language Version**: ArkTS
 
 * **Dependency Libraries**
