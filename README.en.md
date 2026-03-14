@@ -2,7 +2,7 @@
 
 ## Introduction
 
-`Calculator` is a basic calculator application in the OpenHarmony system, providing standard calculator and scientific calculator functions, with support for history record management. The application is developed using the ArkTS language, based on the OpenHarmony Stage model, supports multiple device forms including Phone, Tablet, and PC, supports foldable devices, and features responsive layout, multi-device adaptation, and accessibility support.
+`Calculator` is a basic calculator application in the OpenHarmony system, providing standard calculator and scientific calculator functions, with support for history record management. The application is developed using the ArkTS language, based on the OpenHarmony Stage model, supports multiple device forms including Phone, Tablet, and PC, supports foldable devices, and features responsive layout and multi-device adaptation.
 
 Calculator includes the following common features:
 

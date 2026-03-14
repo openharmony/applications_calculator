@@ -1,7 +1,7 @@
 # 计算器应用
 
 ## 简介
-`Calculator` 是 OpenHarmony 系统中的基础计算器应用，提供标准计算器和科学计算器功能，并支持历史记录管理。该应用采用 ArkTS 语言开发，基于 OpenHarmony Stage 模型，支持 Phone、Tablet 和 PC 多种设备形态，支持折叠屏设备，具备响应式布局、多设备适配和无障碍支持等特性。
+`Calculator` 是 OpenHarmony 系统中的基础计算器应用，提供标准计算器和科学计算器功能，并支持历史记录管理。该应用采用 ArkTS 语言开发，基于 OpenHarmony Stage 模型，支持 Phone、Tablet 和 PC 多种设备形态，支持折叠屏设备，具备响应式布局和多设备适配等特性。
 
 Calculator 包含以下常用功能：
 
