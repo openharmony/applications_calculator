@@ -2,13 +2,13 @@
 
 ## Introduction
 
-`Calculator` is a basic calculator application in the OpenHarmony system, providing standard calculator and scientific calculator functions, with support for history record management. The application is developed using the ArkTS language, based on the OpenHarmony Stage model, and supports multiple device forms including Phone, Tablet, and PC. It features responsive layout, multi-device adaptation, and accessibility support.
+`Calculator` is a basic calculator application in the OpenHarmony system, providing standard calculator and scientific calculator functions, with support for history record management. The application is developed using the ArkTS language, based on the OpenHarmony Stage model, supports multiple device forms including Phone, Tablet, and PC, supports foldable devices, and features responsive layout and multi-device adaptation.
 
 Calculator includes the following common features:
 
 * **Standard Calculator**: Supports basic arithmetic operations, percentage, square root, and other common calculation functions.
-* **Scientific Calculator**: Supports advanced mathematical operations such as trigonometric functions, logarithms, exponents, and factorials.
-* **History Records**: Automatically saves calculation history, supports viewing, copying, and deleting history records.
+* **Scientific Calculator**: Fully displayed only in landscape mode, supports trigonometric functions, logarithms, exponents, factorials, and other advanced mathematical operations. Some advanced mathematical functions have precision limitations.
+* **History Records**: Automatically saves calculation history, supports viewing, copying, and deleting history records, with a maximum of 100 history records.
 * **Multi-Device Adaptation**: Supports multiple device forms such as phones, tablets, and PCs, automatically adapting to different screen sizes.
 * **Memory Functions**: Supports M+, M-, MR, MC and other memory operations.
 * **Angle/Radian Conversion**: Scientific calculator supports switching between angle and radian modes.
@@ -25,7 +25,7 @@ Calculator includes the following common features:
 
 The overall architecture adopts a modular design, divided into application layer, feature layer, common layer, and product layer.
 
-* **Application Layer (Product Layer)**
+* **Product Layer**
   * **Phone Entry**: Phone/tablet device entry module, responsible for application Ability lifecycle management, page routing, and device-specific adaptation.
   * **PC Entry**: PC device entry module, providing PC-specific interaction methods and layout adaptation.
 
@@ -37,14 +37,14 @@ The overall architecture adopts a modular design, divided into application layer
 
 * **Common Layer**
   * **Utility Libraries**: Provides basic functions such as database operations, logging, common utilities, and breakpoint system.
-  * **Data Models**: Defines database table structures and common data structures.
+  * **Data Models**: Defines globally common database table structures and data objects
+    * **TableData**: Includes field definitions for calculation expressions, database configuration, and common query statements, supporting persistent storage of history records.
+    * **LooseObject**: Used for history record data transmission, supports date grouping and database ID mapping, as well as simplified data structures for history record list display, implementing data conversion between database records and application UI.
 
 ### Key Interaction Flows
 
 #### Calculation Flow
 
-<div align="center">
-</div>
 
 1. **User Input**: User clicks buttons on the numeric panel, triggering the `handleInput` method of `DigitPanelController`.
 2. **Input Processing**: The controller updates the expression state based on the key type (number, operator, function, etc.).
@@ -56,8 +56,6 @@ The overall architecture adopts a modular design, divided into application layer
 
 #### History Record Management Flow
 
-<div align="center">
-</div>
 
 1. **Save Record**: After each successful calculation, the expression and result are inserted into the database through `RdbHelper`.
 2. **Query Records**: When the user accesses the history record page, the latest 100 records are queried from the database.
@@ -180,37 +178,6 @@ hdc install "hap_package_path"
 
 ## Usage Instructions
 
-### Application Features
-
-Calculator provides the following main features:
-
-1. **Standard Calculator Mode**
-   - Basic arithmetic operations (addition, subtraction, multiplication, division)
-   - Percentage calculation
-   - Square root operation
-   - Positive/negative sign toggle
-   - Clear and delete functions
-
-2. **Scientific Calculator Mode**
-   - Trigonometric functions (sin, cos, tan and their inverse functions)
-   - Logarithmic functions (log, ln)
-   - Exponential operations (x², x³, xʸ)
-   - Factorial operation
-   - Angle/radian switching
-   - Constants (π, e)
-
-3. **History Record Functionality**
-   - Automatically save calculation history (up to 100 records)
-   - View history record list
-   - Copy history results
-   - Delete single or all records
-
-4. **Memory Functions**
-   - M+: Add current result to memory
-   - M-: Subtract current result from memory
-   - MR: Recall memory value
-   - MC: Clear memory
-
 ### Interface Description
 
 Calculator application mainly uses the following OpenHarmony APIs:
@@ -310,18 +277,8 @@ rdbHelper.insertHistoryRecord({
 
 * **Development Environment**
   * **DevEco Studio for OpenHarmony**: Version greater than 3.1.1.101
-  * **SDK Version**: OpenHarmony SDK API Version 12
+  * **SDK Version**: OpenHarmony SDK API Version 23
   * **Language Version**: ArkTS
-
-* **Runtime Platform**
-  * Only supports standard system
-  * Supports Phone, Tablet, PC device forms
-  * Supports foldable devices
-
-* **Functional Limitations**
-  * Maximum history records: 100
-  - Scientific calculator is fully displayed only in landscape mode
-  - Some advanced mathematical functions may have precision limitations
 
 * **Dependency Libraries**
   * mathjs: 11.2.0 (Mathematical calculation library)
