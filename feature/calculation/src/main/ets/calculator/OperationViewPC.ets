@@ -21,7 +21,7 @@ import { DisplayUtil, InputUtil, LogUtil, CommonUtil, } from '@hmos/common';
 import { CalculatorState, ERROR_CODE } from '../components/types';
 import { PhysicsButtonInfo } from '../info/PhysicsButtonInfo';
 import { FONT_FAMILY_DEFAULT } from '../info/PanelSizeInfo';
-import { DigitPanelController } from '..';
+import { AccessibilityInfo, DigitPanelController } from '..';
 import UDC from '@ohos.data.unifiedDataChannel';
 import UTD from '@ohos.data.uniformTypeDescriptor';
 
@@ -91,7 +91,7 @@ export struct OperationViewPC {
       // 如果校验粘贴内容不满足纯数字正则匹配，则显示非法输入提示
       this.isPastePressed = false;
       this.result = '';
-      this.globalExp = this.context.resourceManager.getStringSync($r('app.string.invalid_input').id);
+      this.globalExp = AccessibilityInfo.getStrByResource($r('app.string.invalid_input'));
 
       // 设置光标位置到末尾
       CommonUtil.updateTextInputOffset(this.checkResult(this.globalExp).toString().length);
@@ -266,7 +266,7 @@ export struct OperationViewPC {
   private checkResult(value: string): string {
     const result: string = DisplayUtil.formatAddSeparator(value);
     if (result === ERROR_CODE) {
-      return this.context.resourceManager.getStringSync($r('app.string.error').id);
+      return AccessibilityInfo.getStrByResource($r('app.string.error'));
     }
     return result;
   }
@@ -517,7 +517,7 @@ export struct OperationViewPC {
    * @param void
    */
   checkInputIncludeInvalid(value: string): void {
-    let text = this.context.resourceManager.getStringSync($r('app.string.invalid_input').id);
+    let text = AccessibilityInfo.getStrByResource($r('app.string.invalid_input'));
     if (text === this.displayExpression) {
       this.enableCopyOrCut = false;
     } else {
