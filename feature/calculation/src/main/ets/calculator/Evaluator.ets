@@ -334,7 +334,7 @@ export class Evaluator {
     if (expressionValue !== undefined) {
       this.expression = DisplayUtil.formatAddSeparator(expressionValue);
     }
-    if (this.expression === this.context.resourceManager.getStringSync($r('app.string.invalid_input').id)) {
+    if (this.expression === AccessibilityInfo.getStrByResource($r('app.string.invalid_input'))) {
       this.onClear();
     }
     let leftExp: string = '';
