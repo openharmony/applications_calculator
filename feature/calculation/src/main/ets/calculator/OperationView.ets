@@ -28,6 +28,7 @@ import {
   BREAKPOINT_SPLIT_SCREEN_UP_DOWN,
   BREAKPOINT_MD_SM,
 } from '@hmos/common';
+import { AccessibilityInfo } from '../info/AccessibilityInfo';
 import { CalculatorState, ERROR_CODE } from '../components/types';
 import { PhysicsButtonInfo } from '../info/PhysicsButtonInfo';
 import { FONT_FAMILY_DEFAULT } from '../info/PanelSizeInfo';
@@ -261,7 +262,7 @@ export struct OperationView {
   private checkResult(value: string): string {
     const result: string = DisplayUtil.formatAddSeparator(value);
     if (result === ERROR_CODE) {
-      return this.context.resourceManager.getStringSync($r('app.string.error').id);
+      return AccessibilityInfo.getStrByResource($r('app.string.error'));
     }
     return result;
   }
@@ -304,7 +305,7 @@ export struct OperationView {
       // 如果校验粘贴内容不满足纯数字正则匹配，则显示非法输入提示
       this.isPastePressed = false;
       this.result = '';
-      this.globalExp = this.context.resourceManager.getStringSync($r('app.string.invalid_input').id);
+      this.globalExp = AccessibilityInfo.getStrByResource($r('app.string.invalid_input'));
 
       // 设置光标位置到末尾
       CommonUtil.updateTextInputOffset(this.checkResult(this.globalExp).toString().length);
@@ -357,7 +358,7 @@ export struct OperationView {
    * @param value: 输入值
    */
   checkInputIncludeInvalid(value: string): void {
-    let text = this.context.resourceManager.getStringSync($r('app.string.invalid_input').id);
+    let text = AccessibilityInfo.getStrByResource($r('app.string.invalid_input'));
     if (text === this.displayExpression) {
       this.enableCopyOrCut = false;
     } else {

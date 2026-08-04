@@ -105,19 +105,24 @@ export class AccessibilityInfo {
    * @param { Resource } 资源.
    * @return { string } 转换后的字符串.
    */
- public static getStrByResource(resource: Resource): string {
-   let playStr: string = '';
-   let context = GlobalContext.getContext().getObject('resourceManager') as resmgr.ResourceManager;
-   if (context !== undefined) {
-     try {
-       playStr = context.getStringSync(resource.id);
-       return playStr;
-     } catch (error) {
-       LogUtil.error(TAG, 'getButtonInfo getString error');
-     }
-   }
-   return '';
- }
+  public static getStrByResource(resource: Resource): string {
+    let playStr: string = '';
+    let globalContext: GlobalContext = GlobalContext.getContext();
+    if (globalContext === undefined) {
+      return '';
+    }
+    let context = globalContext.getObject('resourceManager') as resmgr.ResourceManager;
+    if (!context) {
+      return '';
+    }
+    try {
+      playStr = context.getStringSync(resource.id);
+      return playStr;
+    } catch (error) {
+      LogUtil.error(TAG, 'getButtonInfo getString error');
+      return '';
+    }
+  }
 
   /**
    * 获取点击是的无障碍播报内容，优先通过clickTextMap获取，如果没有则通过getButtonInfo 获取
