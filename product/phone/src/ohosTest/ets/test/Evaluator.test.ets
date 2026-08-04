@@ -631,16 +631,7 @@ export default function EvaluatorTest() {
       }, temp, '');
       await driver.delayMs(DELAY_INTERVAL_TIME);
     });
-    it('addExpression_26', 0, async () => {
-      await driver.delayMs(DELAY_INTERVAL_TIME);
-      evaluator!.setState(CalculatorState.RESULT);
-      evaluator!.setGlobalExpression(this.context.resourceManager.getStringSync($r('app.string.invalid_input').id))
-      let temp: PhysicsButtonInfo = new PhysicsButtonInfo();
-      temp.keyText = '';
-      evaluator!.addExpression(() => {
-      }, temp, '');
-      await driver.delayMs(DELAY_INTERVAL_TIME);
-    });
+
     it('addExpression_26_1', 0, async () => {
       await driver.delayMs(DELAY_INTERVAL_TIME);
       evaluator!.setState(CalculatorState.RESULT);

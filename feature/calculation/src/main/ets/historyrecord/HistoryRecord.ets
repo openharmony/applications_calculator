@@ -27,6 +27,7 @@ import {
 import { HistoryRecordController } from './HistoryRecordController';
 import { DelRecordsDialog } from '../views/DelRecordsDialog';
 import { EmptyView } from './EmptyView';
+import { AccessibilityInfo } from '../info/AccessibilityInfo';
 
 const TAG: string = 'HistoryRecord';
 const GRID_COUNT: number = 4;
@@ -426,9 +427,7 @@ export struct HistoryRecord {
     .width('100%')
     .height('100%')
     .backgroundColor($r('app.color.color_main_bg'))
-    .title((
-      getContext(this) as common.UIAbilityContext).resourceManager.getStringSync($r('app.string.history_record')
-    ))
+    .title(AccessibilityInfo.getStrByResource($r('app.string.history_record')))
     .menus(this.menus)
     .padding({ top: CommonUtil.getTopSafeHeight() })
   }
