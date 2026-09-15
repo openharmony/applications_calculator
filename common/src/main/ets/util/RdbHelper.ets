@@ -170,6 +170,14 @@ export class RdbHelper {
   /**
    * judge table is full for max count
    */
+
+  private parseCountWholeTokenInt(value: string, defaultValue: number = 0): number {
+    if (/^\d+$/.test(value)) {
+      return Number.parseInt(value, 10);
+    }
+    return defaultValue;
+  }
+
   async isTableFull(): Promise<boolean> {
     await this.getRdbStore();
     if (this.rdbStore === null) {
@@ -182,7 +190,7 @@ export class RdbHelper {
       const cnt: string = resultSet.getString(0);
       LogUtil.info(TAG, 'table count is: ', cnt)
       resultSet.close();
-      return Number.parseInt(cnt) >= MAX_HISTORY_RECORD;
+      return this.parseCountWholeTokenInt(cnt) >= MAX_HISTORY_RECORD;
     } catch (err) {
       LogUtil.error(TAG, 'executeSql failed, err: ', JSON.stringify(err?.message))
       return false;
